@@ -1,7 +1,14 @@
 import React from 'react'
 import { NotesAppBar } from './NotesAppBar';
+import { useSelector } from 'react-redux';
 
 export const NoteScreen = () => {
+
+    const a = useSelector( state => state.notes );
+    
+    console.log(a)
+
+
     return (
         <div className="notes__main-content">
             <NotesAppBar/>
